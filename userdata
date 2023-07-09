@@ -1,0 +1,8 @@
+#!/bin/bash
+sudo yum install httpd -y
+sudo apachectl start
+sudo systemctl enable httpd
+sudo apachectl configtest
+sudo firewall-cmd --permanent --zone=public --add-service=http
+sudo firewall-cmd --reload
+sudo bash -c 'echo Instance deployed using Terraform >> /var/www/html/index.html'

@@ -1,0 +1,9 @@
+compartment_id = 
+tenancy_ocid = 
+user_ocid = 
+fingerprint = 
+region = 
+private_key_path = 
+instance_shape = 
+ssh_public_key = 
+image_id = 
